@@ -1,0 +1,571 @@
+/****************************************************************************/
+/******************************* Globales ***********************************/
+/****************************************************************************/
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+}
+
+/****************************************************************************/
+/******************************** Logos *************************************/
+/****************************************************************************/
+.pokemon_icon {
+    height: 40px;
+    width: 40px;
+}
+
+/****************************************************************************/
+/**************************** other-conteiner *******************************/
+/****************************************************************************/
+.logo-conteiner{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    height: 25%;
+    width: 25%;
+}
+
+/****************************************************************************/
+/******************************** Header ************************************/
+/****************************************************************************/
+.nav-header{
+    background-color:#F2F2F2;
+    position: sticky;
+    top: 0;
+}
+
+.header-conteiner {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+/****************************************************************************/
+/************************* Header-item__pikachu *****************************/
+/****************************************************************************/
+.header-item__pikachu {
+    height: 87px;
+    width: 127px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-item__pikachu:hover {
+    background-color: #E6BC2F;
+}
+
+.header-item__pikachu .item-conteiner:hover {
+    color: white;
+}
+
+/****************************************************************************/
+/*********************** Header-item__bulbasaur *****************************/
+/****************************************************************************/
+.header-item__bulbasaur {
+    height: 87px;
+    width: 127px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-item__bulbasaur:hover {
+    background-color: #4DAD5B;
+}
+
+.header-item__bulbasaur .item-conteiner:hover {
+    color: white;
+}
+
+/****************************************************************************/
+/************************ Header-item__charander ****************************/
+/****************************************************************************/
+.header-item__charmander {
+    height: 87px;
+    width: 127px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-item__charmander:hover {
+    background-color: #EE6B2F;
+}
+
+.header-item__charmander .item-conteiner:hover {
+    color: white;
+}
+
+/****************************************************************************/
+/************************* Header-item__squirtle ****************************/
+/****************************************************************************/
+.header-item__squirtle {
+    height: 87px;
+    width: 127px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-item__squirtle:hover {
+    background-color: #30A7D7;
+}
+
+.header-item__squirtle .item-conteiner:hover {
+    color: white;
+}
+
+/****************************************************************************/
+/**************************** item-conteiner ********************************/
+/****************************************************************************/
+.item-conteiner {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.item__name {
+    text-decoration: none;
+}
+
+/****************************************************************************/
+/**************************** pikachu-details *******************************/
+/****************************************************************************/
+.pikachu-details {
+    display: flex;
+    justify-content: center;
+    background-color: #F4E2AE;
+    padding-bottom: 10px;
+    padding-top: 102px;
+}
+
+/****************************************************************************/
+/**************************** pikachu-profile *******************************/
+/****************************************************************************/
+.pikachu-profile {
+    width: 513px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-pikachu {
+    background-color: #C8AA63;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.info-pikachu-left__ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.info-pikachu-right__ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.atribute-value {
+    color: black;
+}
+
+/****************************************************************************/
+/************************* tipo y lista-de-tipos ****************************/
+/****************************************************************************/
+.tipo-eléctrico {
+    background-color: #EED535;
+    border-radius: 10px;
+    width: 127px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.tipo-eléctrico span {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/****************************************************************************/
+/******************** debilidad y lista-de-debilidades **********************/
+/****************************************************************************/
+.tipo-tierra {
+    background-color: #AB9842;
+    border-radius: 10px;
+    width: 127px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.tipo-tierra span {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/****************************************************************************/
+/*************************** bulbasaur-details ******************************/
+/****************************************************************************/
+.bulbasaur-details {
+    display: flex;
+    justify-content: center;
+    background-color: #ACD5C3;
+    padding-bottom: 10px;
+    padding-top: 102px;
+}
+
+/****************************************************************************/
+/*************************** bulbasaur-profile ******************************/
+/****************************************************************************/
+.bulbasaur-profile {
+    width: 513px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/****************************************************************************/
+/******************************** info **************************************/
+/****************************************************************************/
+.info-bulbasaur {
+    background-color: #619568;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.info-bulbasaur-left__ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.info-bulbasaur-right__ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.atribute-value {
+    color: black;
+}
+
+/****************************************************************************/
+/************************* tipo y lista-de-tipos ****************************/
+/****************************************************************************/
+.tipo {
+    height: 50px;
+}
+
+.lista-de-tipos {
+    color: white;
+    height: 50px;
+}
+
+.lista-de-tipos ul {
+    display: flex;
+    padding: 0;
+}
+
+.tipo-planta {
+    background-color: #9BCC50;
+    border-radius: 10px;
+    width: 127px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.tipo-planta span {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tipo-veneno {
+    background-color: #B97FC9;
+    border-radius: 10px;
+    width: 127px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.tipo-veneno span {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/****************************************************************************/
+/******************** debilidad y lista-de-debilidades **********************/
+/****************************************************************************/
+.debilidad {
+    height: 50px;
+}
+
+.lista-de-debilidades {
+    color: white;
+    height: 50px;
+}
+
+.lista-de-debilidades ul{
+    display: flex;
+    padding: 0;
+}
+
+.tipo-fuego {
+    background-color: #FD7D24;
+    border-radius: 10px;
+    width: 127px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.tipo-fuego span {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tipo-psiquico {
+    background-color: #F366B9;
+    border-radius: 10px;
+    width: 127px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.tipo-psiquico span {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tipo-volador {
+    background-color: #A4A4A4;
+    border-radius: 10px;
+    width: 127px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.tipo-volador span {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tipo-hielo {
+    background-color: #51C4E7;
+    border-radius: 10px;
+    width: 127px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.tipo-hielo span {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/****************************************************************************/
+/************************** charmander-details ******************************/
+/****************************************************************************/
+.charmander-details {
+    display: flex;
+    justify-content: center;
+    background-color: #F0CAB1;
+    padding-bottom: 10px;
+    padding-top: 102px;
+}
+
+/****************************************************************************/
+/*************************** charmander-profile *****************************/
+/****************************************************************************/
+.charmander-profile {
+    width: 513px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-charmander {
+    background-color: #E3815B;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.info-charmander-left__ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.info-charmander-right__ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.atribute-value {
+    color: black;
+}
+
+/****************************************************************************/
+/************************* tipo y lista-de-tipos ****************************/
+/****************************************************************************/
+.tipo-fuego {
+    background-color: #FD7D24;
+    border-radius: 10px;
+    width: 127px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.tipo-fuego span {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/****************************************************************************/
+/******************** debilidad y lista-de-debilidades **********************/
+/****************************************************************************/
+.tipo-agua {
+    background-color: #4592C4;
+    border-radius: 10px;
+    width: 127px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.tipo-agua span {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tipo-roca {
+    background-color: #595959;
+    border-radius: 10px;
+    width: 127px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.tipo-roca span {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/****************************************************************************/
+/*************************** squirtle-details *******************************/
+/****************************************************************************/
+.squirtle-details {
+    display: flex;
+    justify-content: center;
+    background-color: #B8DEE7;
+    padding-bottom: 10px;
+    padding-top: 102px;
+}
+
+/****************************************************************************/
+/**************************** squirtle-profile ******************************/
+/****************************************************************************/
+.squirtle-profile {
+    width: 513px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-squirtle {
+    background-color: #669EB1;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.info-squirtle-left__ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.info-squirtle-right__ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.atribute-value {
+    color: black;
+}
